@@ -1,0 +1,342 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200&family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main  */
+.main
+{
+ height: 90vh;
+ width: 100%;
+ background-color: #2e2e2e;
+ padding: 0px 12%;
+ display: flex;
+ flex-direction:column ;
+}
+.header
+{
+    width: 100%;
+    padding: 20px 0px;
+    /* background-color: red; */
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.logo{
+    width:12%;
+    height: 50px;
+    /* background-color:black; */
+    display: flex;
+    align-items: center;
+}
+.logo-img
+{
+    width: 100%;
+}
+.social
+{
+    width: 20%;
+    height: 50px;
+    /* background-color: blue; */
+   
+
+}
+.social-icons
+{
+    width: 100%;
+    height: 50px;
+    /* background-color: green; */
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    color: white;
+    transition: 0.3s;
+}
+.social-icons >li :hover
+{
+    transform: scale(1.5);
+}
+
+.btn
+{
+    padding: 12px 20px;
+    background-color: #e56f14; 
+    color: white;
+    border: 1px solid #e56f14;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'poppins';
+}
+/* * css main-content */ 
+
+.main-content
+{
+    width: 100%;
+    /* background-color: green; */
+    margin-top: 70px;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.intro{
+    width: 55%;
+    height: 400px;
+    padding: 20px;
+    /* background-color: white; */
+    color: white;
+    font-family: 'poppins';
+
+}
+
+.name
+{
+    font-size: 90px;
+    color: #e56f14;
+}
+.role
+{
+    font-size: 20px;
+}
+
+.intro-text
+{
+    margin-top: 20px;
+}
+.ttm-btn
+{
+    margin-top: 20px;
+}
+.portfolio-pic
+{
+    width: 40%;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.pic 
+{
+    width: 60%;
+    background-color: #f5de89;
+    padding-top:20px ;
+    padding-left: 10px;
+    padding-right: 10px;
+   position: absolute;
+   z-index: 10;
+   border-radius: 10px;
+  
+
+}
+
+.pic > img 
+{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.bg 
+{
+    width: 60%;
+    height: 450px;
+    background-color: #e56f14;
+    transform: rotateZ(-45deg);
+    border-radius: 10px;
+   
+}
+
+/* navigation  css*/
+
+.navigation
+{
+    width: 100%;
+    padding: 30px 12%;
+    /* background-color: red; */
+    position: absolute;
+    margin-top: -80px;
+
+}
+
+.nav
+{
+ width: 100%;
+ background-color: black;
+ display: flex;
+ column-gap: 20px;
+ align-items: center;
+ padding: 10px 20px;
+ border-radius: 10px;
+}
+.nav-item
+{
+   padding:25px 0 ;
+    width: 100px;
+    background-color: #2e2e2e;
+    font-size: 22px;
+    font-family: 'poppins';
+    color: white;
+    column-gap: 20px;
+    border-radius: 10px;
+    transition: .2s;
+    overflow: hidden;
+
+}
+
+.nav-item:hover
+{
+    width: 250px;
+}
+
+.nav-link
+{
+    width: 250px;
+    /* background-color: red; */
+    margin-left: 40px;
+}
+.nav-link> i
+{
+    display: inline-block;
+}
+.nav-link > p
+{
+    display: inline-block;
+    margin-left: 60px;
+    /* display: none; */
+}
+
+.nav-item:hover .nav-link > p
+{
+    margin-left:10px ;
+}
+
+/* content css */
+
+.content
+{
+    width: 100%;
+    padding: 30px 12%;
+    background-color:#393838;
+    font-family: 'poppins';
+}
+.display-area
+{
+    width:100% ;
+   
+    margin-top: 70px;
+    padding: 20px 30px;
+    background-color:#2e2e2e;
+}
+.about-me
+{
+    width: 100%;
+    padding: 10px 0px;
+    /* background-color: yellow; */
+}
+.about
+{
+    width: 45%;
+    padding: 10px;
+    color: white;
+    background-color:#1d1c1c;
+}
+.education
+{
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    column-gap: 4%;
+    /* background-color: yellow; */
+}
+.post-graduaction
+{
+    width: 33%;
+   padding: 20px;
+    /* font-family: 'poppins'; */
+    background-color:#1d1c1c;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+
+}
+.post-graduaction> i
+{
+    font-size: 100px;
+    align-self: center;
+    padding: 40px;
+}
+
+.Skills
+{
+    width: 100%;
+    padding: 30px 12%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+}
+.Skills > i
+{
+    font-size: 200px;
+    color: white;
+    transition: 0.3s;    
+   
+}
+.Skills > i:hover
+{
+    transform: scale(1.2);
+}
+.contact
+{
+    width: 100%;
+    padding: 30px 12%;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+ 
+    /* background-color: yellow; */
+}
+
+.contact-list > i
+{
+    list-style: none;
+}
+
+/* hiding element  */
+
+
+.about-section
+{
+    display: none;
+}
+.eduaction-section
+{
+    display: none;
+}
+.skill-section
+{
+
+    display: none;
+}
+.contact-section
+{
+    display: none;
+}
